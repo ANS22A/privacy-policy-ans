@@ -2,81 +2,174 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>سياسة الخصوصية - إضافة أنس القادري</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>سياسة الخصوصية وشروط الخدمة - إضافة أنس القادري</title>
   <style>
+    :root {
+      --primary: #128C7E;
+      --primary-dark: #075E54;
+      --accent: #25D366;
+      --text: #1f2937;
+      --text-muted: #6b7280;
+      --bg: #f9fafb;
+      --card-bg: #ffffff;
+      --border: #e5e7eb;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.8;
-      background: #f9f9f9;
-      margin: 0;
-      padding: 20px;
-      color: #222;
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 30px 16px;
     }
     .container {
-      max-width: 800px;
-      margin: auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
+      max-width: 840px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border-radius: 16px;
+      padding: 40px 32px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+      border: 1px solid var(--border);
     }
-    h1, h2 {
-      color: #25D366;
+    header {
+      border-bottom: 2px solid #edf2f7;
+      padding-bottom: 24px;
+      margin-bottom: 30px;
+    }
+    .badge {
+      display: inline-block;
+      background: #e8f8ee;
+      color: var(--primary);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 26px;
+      color: var(--primary-dark);
+      margin-bottom: 8px;
+    }
+    .meta {
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+    h2 {
+      font-size: 19px;
+      color: var(--primary-dark);
+      margin: 28px 0 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    p, li {
+      font-size: 15px;
+      color: #374151;
+      margin-bottom: 12px;
+    }
+    ul {
+      padding-right: 22px;
+      margin-bottom: 16px;
+    }
+    li { margin-bottom: 8px; }
+    .highlight-box {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 18px 0;
+    }
+    .highlight-box.warning {
+      background: #eff6ff;
+      border-color: #bfdbfe;
+    }
+    .highlight-box strong { color: var(--primary-dark); }
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--text-muted);
+      text-align: center;
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <header>
+      <span class="badge">الإصدار 1.6.0 المعتمد</span>
+      <h1>سياسة الخصوصية وشروط الاستخدام</h1>
+      <p class="meta">إضافة أنس القادري لتنزيل الملفات من واتس اب لمتصفح Google Chrome | آخر تحديث: سبتمبر 2026</p>
+    </header>
 
-<div class="container">
+    <section>
+      <h2>1. مقدمة</h2>
+      <p>
+        تلتزم «إضافة أنس القادري لتنزيل الملفات من واتس اب» بحماية خصوصية المستخدمين وتوفير أعلى درجات الشفافية وفقاً لسياسات بيانات المستخدم في سوق Chrome الإلكتروني (Google Chrome Web Store User Data Policy). توضح هذه السياسة طبيعة البيانات المجمعة، والغرض منها، وكيفية حمايتها.
+      </p>
 
-  <h1>سياسة الخصوصية</h1>
-  <h2>إضافة أنس القادري لتنزيل الملفات من واتس اب</h2>
+      <h2>2. البيانات التي نقوم بجمعها (تحليل الأداء والجودة التشغيلية)</h2>
+      <p>
+        ابتداءً من الإصدار 1.6.0، قد تقوم الإضافة بجمع بيانات تشخيصية وفنية للأداء وإرسالها إلى قاعدة بياناتنا السحابية المشفرة بغرض مراقبة سرعة واستقرار عمليات التنزيل لجميع المستخدمين:
+      </p>
+      <ul>
+        <li><strong>مؤشرات سرعة وأداء التنزيل:</strong> قياس زمن الاستجابة والمدة المستغرقة بالمللي ثانية (ms) منذ النقر وحتى إتمام الحفظ لضمان سلاسة الخدمة وسرعتها.</li>
+        <li><strong>بيانات الملف الفنية:</strong> نوع الملف وامتداده (مثل PDF, DOCX, XLSX, PPTX, صورة) وحجمه، والمسار التقني المستخدم (التنزيل الصامت المباشر أو درع المعاينة).</li>
+        <li><strong>معرّف جهة الإرسال:</strong> رقم هاتف جهة الاتصال المستخرج من معرّف الرسالة لغرض التحليل الإحصائي التشغيلي وتتبع جودة واستقرار التنزيلات بين الجلسات.</li>
+        <li><strong>معرّف عميل مجهول (Anonymous Client UUID):</strong> رقم عشوائي يُنشأ محلياً لتمييز الجلسات الفريدة إحصائياً دون ربطها بهوية المستخدم الشخصية أو جهازه.</li>
+      </ul>
 
-  <p>
-    توضح هذه الصفحة سياسة الخصوصية الخاصة بإضافة أنس القادري لتنزيل الملفات من واتس اب لمتصفح Google Chrome.
-  </p>
+      <div class="highlight-box">
+        <strong>🔒 ما لا نقوم بجمعه نهائياً:</strong>
+        <ul>
+          <li>لا نقوم بقراءة أو فحص أو تخزين نصوص رسائلك أو محادثاتك الشخصية.</li>
+          <li>لا نقوم بفحص أو قراءة المحتوى الداخلي للملفات المحملة.</li>
+          <li>لا نصل إلى قائمة جهات الاتصال الخاصة بجهازك أو سجلات تصفحك.</li>
+        </ul>
+      </div>
 
-  <h2>جمع البيانات</h2>
-  <p>
-    هذه الإضافة لا تقوم بجمع أو تخزين أو مشاركة أي بيانات شخصية للمستخدم.
-    لا يتم جمع أي معلومات مثل الاسم أو البريد الإلكتروني أو الرسائل أو الملفات.
-  </p>
+      <h2>3. الغرض من جمع البيانات واستخدامها</h2>
+      <p>تُستخدم البيانات المجمعة حصرياً للأغراض التالية:</p>
+      <ul>
+        <li>تحليل أداء وسرعة التنزيل واكتشاف أي بطء أو أخطاء برمجية في معالجة الملفات الكبيرة.</li>
+        <li>تحسين توافق الإضافة مع تحديثات WhatsApp Web المستمرة.</li>
+        <li>متابعة موثوقية وجودة الخدمة التشغيلية لكافة المستخدمين.</li>
+      </ul>
 
-  <h2>استخدام البيانات</h2>
-  <p>
-    جميع العمليات تتم محليًا داخل المتصفح فقط بهدف تحميل ملفات PDF من WhatsApp Web.
-  </p>
+      <h2>4. أمان البيانات والتخزين السحابي</h2>
+      <p>
+        يتم نقل كافة البيانات المشفرة باستخدام بروتوكول الأمان العالي <strong>HTTPS / TLS 1.3</strong>، وتُخزن البيانات في خوادم سحابية مركزية مؤمنة (Supabase) متوافقة مع أرقى المعايير العالمية لحماية وأمان البيانات (SOC2 Type II و ISO 27001).
+      </p>
 
-  <h2>تخزين البيانات</h2>
-  <p>
-    قد يتم استخدام التخزين المحلي فقط لحفظ إعدادات بسيطة مثل تشغيل أو إيقاف الإضافة.
-  </p>
+      <h2>5. عدم بيع أو مشاركة البيانات (No Sale of Data)</h2>
+      <div class="highlight-box warning">
+        نلتزم التزاماً صارماً بأنه <strong>لا يتم ولا يجوز بيع أو تأجير أو مشاركة أي بيانات للمستخدمين أو أرقام الهواتف مع أي أطراف ثالثة، أو شبكات إعلانية، أو وسطاء بيانات</strong>، ولا تُستخدم البيانات في أي أغراض ترويجية أو إعلانية.
+      </div>
 
-  <h2>مشاركة البيانات</h2>
-  <p>
-    لا يتم مشاركة أي بيانات مع أي جهة خارجية ولا يتم استخدام أي خدمات تتبع أو تحليل.
-  </p>
+      <h2>6. التحكم وخيارات المستخدم</h2>
+      <p>
+        يمتلك المستخدم كامل التحكم في الإضافة، ويمكنه في أي وقت تعطيل الإضافة أو إعادة تعيين سجل الملفات بنقرة واحدة من خلال نافذة الإضافة المنبثقة (Popup).
+      </p>
 
-  <h2>الاتصال بالإنترنت</h2>
-  <p>
-    الإضافة لا تتصل بأي خوادم خارجية وتعمل فقط داخل موقع WhatsApp Web.
-  </p>
+      <h2>7. التراخيص وإخلاء المسؤولية</h2>
+      <p>
+        هذه الإضافة أداة مستقلة طوّرها المهندس أنس القادري لتعزيز الإنتاجية، وهي غير تابعة رسمياً أو مدعومة من WhatsApp أو شركة Meta.
+      </p>
 
-  <h2>الأذونات</h2>
-  <p>
-    يتم استخدام إذن التحميل فقط لتنزيل ملفات PDF، وإذن WhatsApp Web لتفعيل الوظائف داخل الموقع.
-  </p>
+      <h2>8. التواصل والاستفسارات</h2>
+      <p>إذا كانت لديك أي أسئلة أو استفسارات حول سياسة الخصوصية، يمكنك التواصل مع المطور عبر:</p>
+      <ul>
+        <li>المطور: <strong>أنس القادري (Anas Al-Qadri)</strong></li>
+        <li>حساب GitHub: <a href="https://github.com/ANS22A" target="_blank" rel="noopener">github.com/ANS22A</a></li>
+        <li>مستودع السياسة: <a href="https://github.com/ANS22A/privacy-policy-ans" target="_blank" rel="noopener">github.com/ANS22A/privacy-policy-ans</a></li>
+      </ul>
+    </section>
 
-  <h2>إخلاء المسؤولية</h2>
-  <p>
-    هذه الإضافة غير مرتبطة أو مدعومة من WhatsApp أو شركة Meta.
-  </p>
-
-  <h2>التحديثات</h2>
-  <p>
-    قد يتم تحديث هذه السياسة في أي وقت وسيتم نشر التحديثات هنا.
-  </p>
-
-</div>
-
+    <footer>
+      جميع الحقوق محفوظة © 2026 — إضافة أنس القادري لتنزيل الملفات من واتس اب
+    </footer>
+  </div>
 </body>
 </html>
